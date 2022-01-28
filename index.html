@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Codifica ou Decodifica</title>
+
+</head>
+
+<body>
+
+    <header>
+        <strong>Codificador</strong>
+    </header>
+
+    <main>
+            <div class="escolhas">
+                <h1>Escolha a forma de codificação/decodificação:</h1>
+                
+                    <select id="select">
+                        <option id='cifradecesar' data-cifradecesar>Cifra de Cesar</option>
+                        <option id="base">Base 64</option>
+                    </select>
+            </div>
+<!--sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss -->
+
+            <div id="ma" class="hidden" data-ma>
+                <textarea cols="75" id="input" placeholder="Entrada (coloque aqui o que deseja codificar)"></textarea>
+
+
+                <div class="bnt">
+                    <div class='chave'>
+
+                        <span id="label">Encremento da chave: </span>
+                        <button onclick="menos()">-</button>
+                        <span id="key">1</span>
+                        <button onclick="mais()">+</button><br /><br />
+
+                    </div>
+
+                    <div class="radius">
+                        Codificar <input type="radio" name="codifica" onclick="selecionador ()" class="codifica" id="big">
+                        Decodificar <input type="radio" name="codifica" onclick="selecionador ()" class="decodifica" id="big">
+                        
+                    </div>
+                </div>
+
+                <textarea cols="75" class="area" id="output" placeholder="Saida" data-output></textarea>
+            </div>
+
+<!-- sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss -->
+
+            <!-- <div id="mb" class="hidden" data-mb>
+
+
+                <textarea cols="75" id="entrada" placeholder="Entrada (coloque aqui o que deseja codificar)"></textarea>
+
+                <div class="bnt">
+                    <h2>Base 64</h2>
+                    <button onclick="verifica ()" class="codifica" id="big">Codificar</button>
+                    <button onclick="transfor ()" class="decodifica" id="big">Decodificar</button>
+                </div>
+
+                <textarea cols="75" class="area" id="saida" placeholder="Saida"></textarea>
+
+            </div> -->
+    </main>
+
+    <script src="./js/div.js"></script>
+</body>
+
+</html>
